@@ -20,6 +20,8 @@
  * @link       http://pear.php.net/package/Text_Highlighter
  */
 
+require_once 'Highlighter/Renderer.php';
+
 
 // {{{ BC constants
 

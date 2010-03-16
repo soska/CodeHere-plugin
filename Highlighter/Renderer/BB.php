@@ -25,7 +25,7 @@
  * @ignore
  */
 
-require_once 'Text/Highlighter/Renderer.php';
+// require_once 'Text/Highlighter/Renderer.php';
 
 /**
  * BB code renderer, based on Andrey Demenev's HTML renderer.

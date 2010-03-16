@@ -24,8 +24,9 @@
  * @ignore
  */
 
-require_once 'Text/Highlighter/Renderer.php';
-require_once 'Text/Highlighter/Renderer/Array.php';
+// require_once 'Text/Highlighter/Renderer.php';
+// require_once 'Text/Highlighter/Renderer/Array.php';
+require_once 'Array.php';
 
 // BC trick : only define constants if Text/Highlighter.php
 // is not yet included

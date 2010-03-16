@@ -24,9 +24,9 @@
  * @ignore
  */
 
-require_once 'Text/Highlighter/Renderer.php';
-require_once 'Text/Highlighter/Renderer/Array.php';
-require_once 'XML/Serializer.php';
+// require_once 'Text/Highlighter/Renderer.php';
+// require_once 'Text/Highlighter/Renderer/Array.php';
+// require_once 'XML/Serializer.php';
 
 /**
  * XML renderer, based on Andrey Demenev's HTML renderer.

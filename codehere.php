@@ -8,6 +8,7 @@ Version: 1.0
 Author URI: http://dupermag.com/
 License: WTFPL
 */
+
 /*
 // CodeHere Plugin
 // (c) Armando Sosa

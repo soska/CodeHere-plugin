@@ -24,7 +24,7 @@
  * @ignore
  */
 
-require_once 'Text/Highlighter/Renderer.php';
+// require_once 'Text/Highlighter/Renderer.php';
 
 define ('HL_CONSOLE_DEFCOLOR', "\033[0m");
 

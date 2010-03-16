@@ -1,0 +1,73 @@
+.codehere p{
+	text-align:right;
+	margin:0;
+	font-size:11px;
+}
+
+.hl-main {
+	font-size:12px;
+	font-family:Monaco, Andale mono, courier, monospace;
+	line-height:18px;
+	background:#234;
+	overflow:auto;
+}
+
+.hl-default {
+    color: #fff;
+}
+.hl-code {
+    color: #adf;
+}
+
+.hl-brackets {
+    color: #eee;
+}
+.hl-comment {
+    color: #ad0;
+}
+.hl-quotes {
+    color: #3fa;
+}
+.hl-string {
+    color: #3f9;
+}
+.hl-identifier {
+    color: #f90;
+}
+.hl-builtin {
+    color: #f90;
+}
+.hl-reserved {
+    color: #ffa;
+	font-weight:bold;
+}
+.hl-inlinedoc {
+    color: #f99;
+}
+.hl-var {
+    color: #ff9;
+}
+.hl-url {
+    color: Blue;
+}
+.hl-special {
+    color: Navy;
+}
+.hl-number {
+    color: Maroon;
+}
+.hl-inlinetags {
+    color: Blue;
+}
+.hl-gutter {
+	background-color:#DDDDDD;
+	border-right:1px solid #BBBBBB;
+	color:#333333;
+	text-align:right;
+}
+
+.hl-table {
+    margin:0;
+}
+
+

@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Code Here
-Plugin URI: http://dupermag.com/codehere
+Plugin URI: https://github.com/soska/CodeHere-plugin/
 Description: Let you upload source code via the file upload dialog, link it in your post and have it syntax-highlighted. It works somewhat gist.github.com. The text highlighting is made by TextHighlighter (http://pear.php.net/package/Text_Highlighter) a Pear class, modified in this plugin to work without Pear.
 Author: Armando Sosa
 Version: 1.0
@@ -18,7 +18,7 @@ License: WTFPL
 
 
 
-error_reporting(E_ALL);
+// error_reporting(E_ALL);
 
 function codehere_init(){
 	$css = WP_PLUGIN_URL . '/codehere/code.css';

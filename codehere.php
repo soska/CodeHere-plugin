@@ -18,7 +18,7 @@ License: WTFPL
 
 
 
-//error_reporting(E_ALL);
+error_reporting(E_ALL);
 
 function codehere_init(){
 	$css = WP_PLUGIN_URL . '/codehere/code.css';
@@ -48,7 +48,7 @@ function codehere_footer(){
 
 function codehere($atts){
 
-	global $post, $highlighter, $codehereFooter;		
+	global $post, $codehereFooter;		
 
 	if (empty($atts)) {
 		return;
@@ -72,8 +72,10 @@ function codehere($atts){
 
 	// get the attachments
 	$attachments = get_children( array('post_parent' => $post->ID, 'post_status' => 'inherit', 'post_type' => 'attachment', 'order' => 'ASC', 'orderby' => 'guid') );
+	// pr($attachments);
 	foreach ($attachments as $attachment) {
-		if ($fileName == basename($attachment->guid)){
+		$attBaseName = preg_replace('/_\..+$/','',basename($attachment->guid));
+		if ($fileName == $attBaseName){
 			$downloadLink = $attachment->guid;
 			$uploadDir = wp_upload_dir();
 			list($prefix,$sufix) = explode('uploads',$attachment->guid);
@@ -91,9 +93,7 @@ function codehere($atts){
 		// get the attachment contents
 		$file = file_get_contents($attachmentPath);
 				
-		if (!$highlighter) {
-			$highlighter = Text_Highlighter::factory(strtoupper($fileType),array('numbers'=>HL_NUMBERS_TABLE));			
-		}
+		$highlighter = Text_Highlighter::factory(strtoupper($fileType),array('numbers'=>HL_NUMBERS_TABLE));			
 		
 		$output = "<div class=\"codehere\">";
 		$output.= "<p><a class=\"show-raw\" href=\"#\">view raw</a> | ";
